@@ -15,10 +15,14 @@ result = requests.get(url)
 resultStatusCode = result.status_code
 resultHeaders = result.headers
 src = result.content
+# print(src)
 
+#Convert content to a beautiful soup object
 soup = BeautifulSoup(src,'lxml')
 
+#retrieve lyrics from the p tag within the lyrics div and remove html tags)
 lyricsDiv = soup.find("div", {"class": "lyrics"})
+print(lyricsDiv)
 lyricsText = lyricsDiv.find("p").text
 
 ### NLP PROCESSING ###
