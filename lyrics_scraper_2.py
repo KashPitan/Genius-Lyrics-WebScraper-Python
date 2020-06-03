@@ -45,8 +45,7 @@ def get_single_song_lyrics(song_url):
 
 def get_song_info_genius():
     search_url = "http://api.genius.com/search/"
-    access_token = "Ecr32ujznnSmv4yLPRQ_bjz7q3XLq3K-8TKOY8a2n-CXbZOVu5PzfxytGSscrSZk"
-    # headers = {'Authorization': 'Bearer Ecr32ujznnSmv4yLPRQ_bjz7q3XLq3K-8TKOY8a2n-CXbZOVu5PzfxytGSscrSZk'}
+    access_token = "TOKEN HERE"
     song_name = "diawb"
     token = 'Bearer {}'.format(access_token)
     data = {'q': song_name}
